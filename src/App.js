@@ -1,5 +1,18 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./home.jsx";
+import Upload from "./upload.jsx";
+
 function App() {
-  return <div className="App">hello</div>;
+  return (
+    // <div>fwasfs</div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/upload" element={<Upload />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
